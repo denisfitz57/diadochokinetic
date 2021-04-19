@@ -93,8 +93,8 @@ var sequenceFinishedScreen = {
     prompt: "<p></p>",
 };
 
-experimentTimeline = experimentTimeline.concat(startScreen);
 experimentTimeline = experimentTimeline.concat(getIdTrial);
+experimentTimeline = experimentTimeline.concat(startScreen);
 experimentTimeline = experimentTimeline.concat(testmicInstructions);
 experimentTimeline = experimentTimeline.concat(checkmicTrial);
 experimentTimeline = experimentTimeline.concat(initiateTrial1);
