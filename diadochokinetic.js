@@ -2,23 +2,22 @@ import "./jspsych-image-audio-response-with-animation.js";
 //import "./jspsych-audio-keyboard-response.js";
 
 var experimentTimeline = [];
+var urlvar = jsPsych.data.urlVariables();
+var getIdTrial = {
+    type: "survey-text",
+    questions: [{
+        prompt: "If the ID displayed is not correct, please enter it now.",
+        placeholder: urlvar.subjectID,
+    }, ],
+    preamble: "This task will record your voice. It will tell you what to say.",
+    button_label: "Click to enter ID",
+};
 
 var startScreen = {
     type: "html-button-response",
     stimulus: "In this task, we would like you to say the syllables <br><br>'pa ta ka'<br><br>as fast as you can for 20 seconds.\
      <br>There will be a bar on the screen that indicates the remaining time.<br>Click continue for further instructions.",
     choices: ["Continue"],
-};
-
-var getIdTrial = {
-    type: "survey-text",
-    questions: [{
-        prompt: "Make up an ID for yourself. <br>If you use an email, I will send the resulting audio files to that address.",
-    }, ],
-    preamble: "This task will record your voice. It will tell you what to say. <br>The audio will not be used in research results,\
-    but will be used to develop software for doing research analysis.<br> \
- Close this window now if you don't want any recording to happen.",
-    button_label: "Click to enter ID",
 };
 
 var testmicInstructions = {
