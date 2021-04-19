@@ -1,3 +1,6 @@
+import "./jspsych-image-audio-response-with-animation.js";
+//import "./jspsych-audio-keyboard-response.js";
+
 var experimentTimeline = [];
 
 var startScreen = {
