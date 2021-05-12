@@ -57,7 +57,7 @@ var initiateTrial2 = {
 
 var sequenceFinishedScreen = {
     type: "html-button-response",
-    stimulus: "Thanks for participating! Press Done to finish, then close this window",
+    stimulus: "Thanks for participating! Press Done to finish.",
     choices: ["Done"],
     prompt: "<p></p>",
 };
