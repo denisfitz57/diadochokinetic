@@ -104,4 +104,7 @@ experimentTimeline = experimentTimeline.concat(sequenceFinishedScreen);
 
 jsPsych.init({
     timeline: experimentTimeline,
+    on_finish: function() {
+        window.close();
+    },
 });
